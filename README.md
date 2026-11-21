@@ -28,7 +28,7 @@ I care about the unglamorous parts — queue workers, retries, credits, storage 
 
 | Product | What it does | Stack |
 | --- | --- | --- |
-| **SocialAgent** | AI content workforce that plans, generates and publishes short-form video to YouTube, Facebook and Instagram — agent campaigns, batch and Drive imports, content calendar, SSE job tracking, encrypted provider keys. | React, Express, MongoDB, OAuth, SSE |
+| **SocialAgent** | AI content workforce that plans, generates and publishes short-form video to YouTube, Facebook and Instagram — agent campaigns, batch and Drive imports, content calendar, SSE job tracking, encrypted provider keys and API access. | React, Express, MongoDB, OAuth, SSE |
 | **WanStudio** | Full-stack video generation studio: model profiles, text/image-to-video, batch jobs, credits and billing, admin dashboard, Kaggle free tier and Modal paid GPU, GCS output. | React, TypeScript, Express, MongoDB, Modal, Kaggle |
 | **Wan2GP Finetune** | Custom WanGP build focused on finetunes: low-VRAM video, image, audio and 3D generation, LoRA support, custom checkpoints and Kaggle/cloud rendering. [Repo](https://github.com/MhdRasal/Wan2GP-finetune) | Python, PyTorch, WanGP, Kaggle |
 | **Lightning Control** | Ops console for the generation stack: Kaggle account pools, template management, start/stop jobs and live logs. | React, Express, MongoDB, GCS |
