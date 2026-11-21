@@ -6,7 +6,11 @@
 
 I turn heavy AI workloads into products people can actually use — from GPU video pipelines to the dashboards that run them.
 
-[Portfolio](https://github.com/MhdRasal/RasalsWorkshop) · [Wan2GP Finetune](https://github.com/MhdRasal/Wan2GP-finetune) · [Tiny Swords](https://tinyswordsweb.vercel.app/)
+[Portfolio](https://github.com/MhdRasal/RasalsWorkshop) · [Nikah Invitation — live](https://nikah-invitation-kunjimol.vercel.app) · [Tiny Swords — live](https://tinyswordsweb.vercel.app/) · [Wan2GP Finetune](https://github.com/MhdRasal/Wan2GP-finetune)
+
+![Public repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FMhdRasal&query=%24.public_repos&label=public%20repos&color=2ea44f&style=flat-square)
+![Private builds](https://img.shields.io/badge/private%20builds-13-6e40c9?style=flat-square)
+![AI products](https://img.shields.io/badge/AI%20products-6-blue?style=flat-square)
 
 </div>
 
@@ -20,24 +24,40 @@ I care about the unglamorous parts — queue workers, retries, credits, storage 
 
 - Building **SocialAgent**, an AI content workforce for creators
 - Building **WanStudio**, a cloud video generation studio
-- Maintaining **Wan2GP Finetune**, my low-VRAM generative stack
+- Maintaining **Wan2GP Finetune**, my open-weight generative stack for local and cloud GPU
 - Exploring real-time **3D digital humans** with NVIDIA Audio2Face-3D
 - Shipped my first game, **Tiny Swords: Arena Survivor**, in one week
 
-## What I'm building
+## Live now
 
-| Product | What it does | Stack |
-| --- | --- | --- |
-| **SocialAgent** | AI content workforce that plans, generates and publishes short-form video to YouTube, Facebook and Instagram — agent campaigns, batch and Drive imports, content calendar, SSE job tracking, encrypted provider keys and API access. | React, Express, MongoDB, OAuth, SSE |
-| **WanStudio** | Full-stack video generation studio: model profiles, text/image-to-video, batch jobs, credits and billing, admin dashboard, Kaggle free tier and Modal paid GPU, GCS output. | React, TypeScript, Express, MongoDB, Modal, Kaggle |
-| **Wan2GP Finetune** | Custom WanGP build focused on finetunes: low-VRAM video, image, audio and 3D generation, LoRA support, custom checkpoints and Kaggle/cloud rendering. [Repo](https://github.com/MhdRasal/Wan2GP-finetune) | Python, PyTorch, WanGP, Kaggle |
-| **Lightning Control** | Ops console for the generation stack: Kaggle account pools, template management, start/stop jobs and live logs. | React, Express, MongoDB, GCS |
-| **Nikah Invitation** | Digital wedding invitation with animated invite, countdown, RSVP flow, admin dashboard, Supabase backend and Google Sheets sync. | React, TypeScript, Supabase, Tailwind |
-| **3D Digital Human** | Real-time talking avatar with NVIDIA Audio2Face-3D, ElevenLabs TTS, LLM-driven gestures and 52 ARKit blendshapes. | Three.js, TypeScript, NVIDIA NIM, Modal |
-| **WanVideo** | First-stage AI video generator powered by Wan2GP and Kaggle GPU resources — the base layer that grew into WanStudio. | React, Kaggle, Wan2GP |
-| **Tiny Swords** | My first game: arena survival built with Godot 4 in one week, exported to web and Android with a live leaderboard. [Play](https://tinyswordsweb.vercel.app/) · [Repo](https://github.com/MhdRasal/TinySwordsWeb) | Godot 4, GDScript, Vercel, MongoDB |
+- **Nikah Invitation** — digital invitation with RSVP, admin dashboard and Supabase backend: [nikah-invitation-kunjimol.vercel.app](https://nikah-invitation-kunjimol.vercel.app)
+- **Tiny Swords: Arena Survivor** — my first game, Godot 4 web build: [tinyswordsweb.vercel.app](https://tinyswordsweb.vercel.app/)
 
-<sub>Several product repositories are private. Happy to walk through the architecture and code on request.</sub>
+## AI products
+
+| Product | What it is | Stack | Status |
+| --- | --- | --- | --- |
+| **SocialAgent** | AI content workforce: agent campaigns, multi-platform publishing, batch and Drive imports, content calendar, live job tracking, encrypted provider keys and API access. | React, Express, MongoDB, OAuth, SSE | AI product · private |
+| **WanStudio** | Full-stack video generation studio: model profiles, text/image-to-video, batch jobs, credits and billing, admin dashboard, Kaggle free tier and Modal paid GPU, GCS output. Renamed from WanVideo 2nd stage. | React, TypeScript, Express, MongoDB, Modal, Kaggle | AI product · private |
+| **Wan2GP Finetune** | Open-weight video, image, audio and 3D generation for local or cloud GPUs. Built around finetunes, LoRAs and custom checkpoints on low VRAM. | Python, PyTorch, WanGP, Kaggle | Open weights · public |
+| **Lightning Control** | Operations console for the generation stack: Kaggle account pools, templates, start/stop jobs and live logs. | React, Express, MongoDB, GCS | AI ops · private |
+| **3D Digital Human** | Real-time talking avatar with NVIDIA Audio2Face-3D, ElevenLabs TTS, LLM-driven gestures and 52 ARKit blendshapes. | Three.js, TypeScript, NVIDIA NIM, Modal | AI product · private |
+| **WanVideo** | First-stage AI video generator powered by Wan2GP and Kaggle GPU resources — the base layer that grew into WanStudio. | React, Kaggle, Wan2GP | AI product · private |
+
+## UI and full-stack work
+
+| Product | What it is | Stack | Status |
+| --- | --- | --- | --- |
+| **Nikah Invitation** | Digital wedding invitation with animated invite, countdown, RSVP and decline flows, admin dashboard, Supabase backend and Google Sheets sync. | React, TypeScript, Supabase, Tailwind | Live · [open](https://nikah-invitation-kunjimol.vercel.app) |
+| **WanVideo — Vercel first stage** | Vercel build of the first-stage generator UI and free-tier flow. | React, TypeScript, Vercel | Private |
+| **Portfolio** | Personal portfolio and workshop pages. | HTML, CSS, JavaScript | [Public](https://github.com/MhdRasal/RasalsWorkshop) |
+| **Tiny Swords** | My first game: arena survival built with Godot 4 in one week, exported to web and Android with a live leaderboard. | Godot 4, GDScript, Vercel, MongoDB | Live · [play](https://tinyswordsweb.vercel.app/) |
+
+## Deployment notes
+
+SocialAgent and WanStudio are long-running Express/MongoDB services with background workers, scheduled jobs and SSE streams. That architecture belongs on a Node host, not Vercel serverless functions, so the Vercel builds stay frontend-only. Nikah Invitation and Tiny Swords are live on Vercel because their backends are Supabase and serverless functions.
+
+<sub>Several product repositories are private. Happy to walk through the architecture and code on request. See [CREDITS.md](https://github.com/MhdRasal/MhdRasal/blob/main/CREDITS.md) for upstream credits.</sub>
 
 ## The journey
 
