@@ -2,9 +2,11 @@
 
 # Muhammed Rasal
 
-### Full-stack developer building AI video, social automation and real-time 3D products.
+### Full-stack AI product engineer
 
-I turn heavy AI workloads into products people can actually use — from GPU video pipelines to the dashboards that run them.
+Building automations, local video generation, games and apps.
+
+I take AI from a model on a GPU to a shippable product: React and Node, job queues, credits, storage, and the GPU workers doing the heavy lifting.
 
 [Portfolio](https://github.com/MhdRasal/RasalsWorkshop) · [Nikah Invitation — live](https://nikah-invitation-kunjimol.vercel.app) · [Tiny Swords — live](https://tinyswordsweb.vercel.app/) · [Wan2GP Finetune](https://github.com/MhdRasal/Wan2GP-finetune)
 
@@ -18,7 +20,7 @@ I turn heavy AI workloads into products people can actually use — from GPU vid
 
 ## About me
 
-I'm a web developer who ended up building AI infrastructure. My work sits between product engineering and GPU pipelines: React frontends, Node/Express APIs, MongoDB and Supabase backends, asynchronous job systems, cloud storage, and the models doing the heavy lifting.
+I'm a full-stack AI product engineer. My work sits between product engineering and GPU pipelines: React frontends, Node/Express APIs, MongoDB and Supabase backends, asynchronous job systems, cloud storage, and the models doing the heavy lifting.
 
 I care about the unglamorous parts — queue workers, retries, credits, storage fallbacks, live logs — because that is what makes generative tools feel like real products instead of demos.
 
