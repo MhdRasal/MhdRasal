@@ -8,7 +8,7 @@ Building automations, local video generation, games and apps.
 
 I take AI from a model on a GPU to a shippable product: React and Node, job queues, credits, storage, and the GPU workers doing the heavy lifting.
 
-[Portfolio](https://github.com/MhdRasal/RasalsWorkshop) · [Nikah Invitation — live](https://nikah-invitation-kunjimol.vercel.app) · [Tiny Swords — live](https://tinyswordsweb.vercel.app/) · [Wan2GP Finetune](https://github.com/MhdRasal/Wan2GP-finetune)
+[Portfolio](https://github.com/MhdRasal/portfolio) · [Nikah Invitation — live](https://nikah-invitation-kunjimol.vercel.app) · [Tiny Swords — live](https://tinyswordsweb.vercel.app/) · [Wan2GP Finetune](https://github.com/MhdRasal/Wan2GP-finetune)
 
 ![Public repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FMhdRasal&query=%24.public_repos&label=public%20repos&color=2ea44f&style=flat-square)
 ![Private builds](https://img.shields.io/badge/private%20builds-13-6e40c9?style=flat-square)
@@ -52,7 +52,7 @@ I care about the unglamorous parts — queue workers, retries, credits, storage 
 | --- | --- | --- | --- |
 | **Nikah Invitation** | Digital wedding invitation with animated invite, countdown, RSVP and decline flows, admin dashboard, Supabase backend and Google Sheets sync. | React, TypeScript, Supabase, Tailwind | Live · [open](https://nikah-invitation-kunjimol.vercel.app) |
 | **WanVideo — Vercel first stage** | Vercel build of the first-stage generator UI and free-tier flow. | React, TypeScript, Vercel | Private |
-| **Portfolio** | Personal portfolio and workshop pages. | HTML, CSS, JavaScript | [Public](https://github.com/MhdRasal/RasalsWorkshop) |
+| **Portfolio** | Personal portfolio built from a reference design, with AI product case studies and live links. | React, Vite, Tailwind CSS, Framer Motion | [Public](https://github.com/MhdRasal/portfolio) |
 | **Tiny Swords** | My first game: arena survival built with Godot 4 in one week, exported to web and Android with a live leaderboard. | Godot 4, GDScript, Vercel, MongoDB | Live · [play](https://tinyswordsweb.vercel.app/) |
 
 ## Deployment notes
